@@ -250,3 +250,6 @@ Optionally, we can input events as the 4th parameter like
 ----------
 
 *In case you feel you can add to this package, please submit a pull request on the Github repo or raise any issues on the Github page, if there are any.*
+
+### License
+![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)
