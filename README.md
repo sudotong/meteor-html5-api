@@ -17,7 +17,7 @@ This package is a wrapper for some popular HTML5 APIs which includes
 Install
 -------
 
-```meteor add gunjansoni:html5-api```
+    meteor add gunjansoni:html5-api
 
 Usage
 -----
