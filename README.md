@@ -17,7 +17,7 @@ This package is a wrapper for some popular HTML5 APIs which includes
 Install
 -------
 
-> meteor add gunjansoni:html5-api
+```meteor add gunjansoni:html5-api```
 
 Usage
 -----
@@ -29,7 +29,7 @@ The package exports `Html5Api` on the client side.
 ----------
 
 
-> Geo Location
+### Geo Location
 
     var geoLocation = html5api.geoLocation();
 
@@ -81,7 +81,7 @@ Some other options available with Geo Location API is
 ----------
 
 
-> Network Information
+### Network Information
 
     var networkInformation = html5Api.networkInformation();
 
@@ -109,7 +109,7 @@ the return value would be "**wifi**" or "**cellular**"
 
 ----------
 
-> Page Visibility
+### Page Visibility
 
     var pageVisibility = html5Api.pageVisibility();
 The page visibility api returns if the page is active or not. It could be determined anytime by calling the `state` function.
@@ -127,7 +127,7 @@ The `onChange` event is triggered when the page visibility changes
 
 
 ----------
-> Speech Recognition
+### Speech Recognition
 
     var speech = html5Api.speechRecognition();
 This is an HTML5 API used in browsers to convert speech to text. 
@@ -165,7 +165,7 @@ This will wait for the user to complete before sending back the result.
 
 
 ----------
-> Speech Synthesis
+### Speech Synthesis
 
     var speakApi = html5Api.speechSynthesis();
 
@@ -192,7 +192,7 @@ However, we have different options available.
  - setVoice : accepts string as the *lang* from getVoices function
 
 ----------
-> Vibration
+### Vibration
 
     var vibrationApi = html5Api.vibration();
 The vibration api works on Mobile browsers. The usage is very simple.
@@ -213,7 +213,7 @@ Optionally, you can stop a vibration by calling `stop`
 
 
 ----------
-> Browser Desktop Notifications (Web Notifications)
+### Browser Desktop Notifications (Web Notifications)
 
     var webNotification = html5Api.webNotification();
 By doing this, a permissions window would pop up on the browser asking permission if the application could show Desktop Notifications.
