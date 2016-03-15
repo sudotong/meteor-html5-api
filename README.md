@@ -118,7 +118,7 @@ The page visibility api returns if the page is active or not. It could be determ
 
 `state` function returns a string which either `visible` or `hidden` value
 
-There is also an `onChange` event for page visibility which could be used as 
+There is also an `onChange` event for page visibility which could be used as
 
     pageVisibility.onChange(function () {
         console.log("The Current Page Visibility is " + pageVisibility.state());
@@ -130,7 +130,7 @@ The `onChange` event is triggered when the page visibility changes
 ### Speech Recognition
 
     var speech = html5Api.speechRecognition();
-This is an HTML5 API used in browsers to convert speech to text. 
+This is an HTML5 API used in browsers to convert speech to text.
 
 By calling `html5Api.speechRecognition()` the browser will request to access the microphone. Once the request has been approved, the user can speak and that would be converted to text.
 
@@ -190,6 +190,7 @@ However, we have different options available.
    - lang : Language of the Voice *Required to set voice*
    - uri : A voice URI
  - setVoice : accepts string as the *lang* from getVoices function
+ - setVoiceByUri : accepts string as the *uri* from getVoices function
 
 ----------
 ### Vibration

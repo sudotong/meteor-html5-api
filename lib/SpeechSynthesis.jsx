@@ -57,6 +57,12 @@ _H5SpeechSynthesis = class {
         });
     }
 
+    setVoiceByUri(uri) {
+        _.each(this.voices, (voice) => {
+            if(uri == voice.uri) this.selectedVoice = voice;
+        });
+    }
+
     _initiateVoices () {
         if (this.isSupported) {
             let voicesAvailable = window.speechSynthesis.getVoices();
