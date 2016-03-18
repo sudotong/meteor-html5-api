@@ -1,10 +1,12 @@
 _H5SpeechSynthesis = class {
     constructor () {
         this.isSupported = !(window.SpeechSynthesisUtterance === undefined);
-        this._initiateVoices();
-        this._loadVoices();
-        this.rate = 1;
-        this.pitch = 1;
+        if(this.isSupported) {
+            this._initiateVoices();
+            this._loadVoices();
+            this.rate = 1;
+            this.pitch = 1;
+        }
     }
 
     speak (text, startCallback = null, endCallback = null) {
