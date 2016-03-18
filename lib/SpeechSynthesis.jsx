@@ -80,7 +80,7 @@ _H5SpeechSynthesis = class {
     }
 
     _loadVoices () {
-        if (this.isSupported) {
+        if (this.isSupported && typeof window.speechSynthesis.addEventListener == "function") {
             window.speechSynthesis.addEventListener("voiceschanged", () => {
                 this._initiateVoices();
             });
