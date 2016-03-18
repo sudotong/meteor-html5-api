@@ -2,8 +2,10 @@ _H5SpeechRecognition = class {
     constructor () {
         window.SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition || null;
         this.isSupported = !(window.SpeechRecognition == null);
-        this.recognizer = new window.SpeechRecognition();
-        this.recognizer.continuous = true;
+        if(this.isSupported) {
+            this.recognizer = new window.SpeechRecognition();
+            this.recognizer.continuous = true;
+        }
     }
 
     start (callback, intrimResults = true) {

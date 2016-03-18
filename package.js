@@ -1,6 +1,6 @@
 Package.describe({
     name: 'gunjansoni:html5-api',
-    version: '0.1.2',
+    version: '0.1.3',
     summary: 'Notifications, Location, Network, Page Visibility, Speech Synthesis, Speech Recognition, Vibration',
     git: 'https://github.com/guns2410/meteor-html5-api',
     documentation: 'README.md'
