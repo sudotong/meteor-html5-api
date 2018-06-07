@@ -1,8 +1,8 @@
 Package.describe({
-    name: 'gunjansoni:html5-api',
-    version: '0.1.5',
+    name: 'sudotong:html5-api',
+    version: '0.1.6',
     summary: 'Notifications, Location, Network, Page Visibility, Speech Synthesis, Speech Recognition, Vibration',
-    git: 'https://github.com/guns2410/meteor-html5-api',
+    git: 'https://github.com/sudotong/meteor-html5-api',
     documentation: 'README.md'
 });
 
@@ -24,6 +24,6 @@ Package.onUse(function(api) {
 Package.onTest(function(api) {
     api.use('ecmascript');
     api.use('tinytest');
-    api.use('gunjansoni:html5-api');
+    api.use('sudotong:html5-api');
     api.addFiles('html5-apis-tests.js');
 });

@@ -13,7 +13,7 @@ _H5SpeechSynthesis = class {
         if (this.isSupported) {
             let utterance = new SpeechSynthesisUtterance();
             utterance.text = text;
-            utterance.voice = this.selectedVoice.uri;
+            utterance.voice = this.selectedVoice;
             utterance.lang = this.selectedVoice.lang;
             utterance.rate = this.rate;
             utterance.pitch = this.pitch;
