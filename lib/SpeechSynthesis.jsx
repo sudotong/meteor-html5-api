@@ -67,14 +67,9 @@ _H5SpeechSynthesis = class {
 
     _initiateVoices () {
         if (this.isSupported) {
-            let voicesAvailable = window.speechSynthesis.getVoices();
-            this.voices = [];
-            _.each(voicesAvailable, (voice) => {
-                let currentVoice = {
-                    name: voice.name, lang: voice.lang, uri: voice.voiceURI
-                };
-                this.voices.push(currentVoice);
-                if (voice.default) this.selectedVoice = currentVoice;
+            this.voices = window.speechSynthesis.getVoices().map(voice => {
+                voice.uri = voice.voiceURI;
+                return voice;
             });
         }
     }
